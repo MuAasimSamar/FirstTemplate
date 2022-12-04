@@ -1,0 +1,1046 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+}
+:root {
+  --dark-blue: #0079ff;
+  --light-blue: #5ea9fa;
+  --black: #000;
+  --white-tint: #f3f4ff;
+  --white: #fff;
+  --gray: #797572;
+  --dark-gray: #353a40;
+}
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+.section {
+  padding: 5rem 0;
+}
+.grid {
+  display: grid;
+}
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-four-column {
+  grid-template-columns: repeat(4, 1fr);
+}
+.common-heading {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 12rem;
+}
+.common-btn {
+  font-size: 2rem;
+  padding: 1.2rem 1.7rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.4s linear;
+}
+/* ===================================
+     Header Section Start
+    ===================================  */
+header {
+  padding: 0 4rem;
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.7rem;
+}
+nav a {
+  font-size: 2.2rem;
+  color: var(--black);
+  position: relative;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  left: 0;
+  width: 0%;
+  height: 0.2rem;
+  border-bottom: 0.3rem solid var(--dark-blue);
+  transition: all 0.4s linear;
+}
+nav a:hover::after {
+  width: 100%;
+}
+header .left {
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  display: flex;
+  gap: 2.4rem;
+}
+.logo {
+  width: 12rem;
+  height: 5rem;
+  text-align: center;
+  padding: 0.7rem 0;
+  color: var(--white-tint);
+  border-radius: 2rem;
+  font-size: 2.3rem;
+  margin-right: 3rem;
+  background-color: var(--dark-blue);
+}
+header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+header .right i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+header .right i:hover {
+  color: var(--dark-blue);
+}
+header .right .btn {
+  padding: 0.7rem 0.9rem;
+  font-size: 2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  background-color: var(--white);
+  transition: all 0.3s linear;
+}
+header .right button:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: none;
+}
+.mobile-navbar-btn {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.mobile-navbar-btn .close {
+  display: none;
+}
+/* ===================================
+     Main Section Start
+    ===================================  */
+main {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+.content {
+  padding-left: 10rem;
+}
+.text h1 {
+  font-size: 5rem;
+}
+.text p {
+  font-size: 1.8rem;
+}
+#btns {
+  margin-right: 23rem;
+  margin-top: 2.5rem;
+  position: relative;
+}
+.btn1 {
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border-color: var(--white);
+}
+.btn1:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+.btn2 {
+  color: var(--dark-blue);
+  background-color: var(--white);
+  border-color: var(--white);
+  margin-left: 1.5rem;
+}
+.btn2:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+.down-arrow i {
+  position: absolute;
+  top: 12rem;
+  left: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+/* ===================================
+     Service Section Start
+    ===================================  */
+.service {
+  margin-top: 1.4rem;
+  height: 55vh;
+  color: var(--white);
+}
+.service h2 {
+  font-size: 5rem;
+}
+.service p {
+  font-size: 1.92rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 2.5rem;
+}
+.service-1 {
+  background-color: var(--dark-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.service-2 {
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.download-btn1 {
+  margin-top: 4rem;
+  padding: 0.5rem 1.7rem;
+  color: var(--dark-blue);
+  background-color: var(--dark-gray);
+  border-color: var(--dark-blue);
+}
+.download-btn1:hover {
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+.download-btn2 {
+  margin-top: 4rem;
+  padding: 0.5rem 1.7rem;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border-color: var(--white);
+}
+.download-btn2:hover {
+  color: var(--dark-gray);
+  background-color: var(--white);
+}
+/* Sub-Service  */
+.sec-sub {
+  padding-top: 4rem;
+}
+.sub-service1,
+.sub-service2,
+.sub-service3,
+.sub-service4,
+.sub-service5,
+.sub-service6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+.sub-service h2 {
+  font-size: 3.4rem;
+}
+.sub-service p {
+  font-size: 2rem;
+}
+.sub-service-text {
+  margin-left: 4rem;
+}
+.sub-service i {
+  font-size: 4rem;
+  color: var(--dark-blue);
+  background-color: var(--white-tint);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ===================================
+     Testimonial Section Start
+    ===================================  */
+.boots-logo i {
+  width: 60rem;
+  height: 60rem;
+  font-size: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-blue);
+  background-color: var(--white-tint);
+  border-radius: 1rem;
+}
+.bootstrap-sec {
+  gap: 10rem;
+}
+.bootstrap-sec h2 {
+  font-size: 5rem;
+}
+.bootstrap-sec .bold-para {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.bootstrap-sec p {
+  font-size: 1.7rem;
+  padding-top: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.boots-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Testimonial section2  */
+.bootstrap-sec2 {
+  gap: 8rem;
+}
+.blueprint1-div {
+  width: 60rem;
+  height: 40rem;
+  background-color: var(--light-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rem;
+  color: var(--white-tint);
+  border-radius: 1rem;
+}
+.blueprint1-text h2 {
+  font-size: 5rem;
+}
+.blueprint1-text p {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+.blueprint1-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blueprint-btn {
+  padding: 0.7rem 1.7rem;
+  margin-top: 4rem;
+  color: var(--dark-blue);
+  background-color: var(--white);
+  border-color: var(--dark-blue);
+}
+.blueprint-btn:hover {
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+/* Testimonial Section3 */
+.bootstrap-sec3 {
+  gap: 10rem;
+}
+.blueprint2-div {
+  width: 60rem;
+  height: 50rem;
+  background-color: var(--light-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rem;
+  color: var(--white);
+  border-radius: 1rem;
+}
+.blueprint2-text {
+  margin-left: 2rem;
+}
+.blueprint2-text h2 {
+  font-size: 5rem;
+}
+.blueprint2-text p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 2rem;
+}
+.blueprint2-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.brows {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.browser {
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--white);
+}
+.blueprint2-text h3 {
+  padding-top: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* ===================================
+     Project Section Start
+    ===================================  */
+.container-project {
+  margin-top: 8rem;
+}
+.project-text p {
+  font-size: 2rem;
+  text-align: center;
+}
+.project-images {
+  gap: 3.2rem;
+}
+.project-images img {
+  width: 100%;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  position: relative;
+}
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.img-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-blue);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: all 0.3s linear;
+  border-radius: 0.7rem;
+}
+.img-overlay:hover > .overlay {
+  transform: translateY(0);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.img-overlay .overlay .common-heading {
+  margin: 0;
+  color: var(--white);
+  font-weight: bold;
+}
+.img-overlay p {
+  font-size: 1.5rem;
+}
+/* ===================================
+     Our Team Section Start
+    ===================================  */
+.emp-cards {
+  margin-top: 8rem;
+  gap: 3.2rem;
+}
+.emp-img img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.emp-img {
+  border-radius: 1rem;
+}
+.emp-text h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 1.8rem;
+}
+.emp-text h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 0.5rem;
+}
+.emp-text p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.emp-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.emp-social i {
+  font-size: 3rem;
+  color: #b05253;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+/* ===================================
+     Our Subscription Section Start
+    ===================================  */
+.subs p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.subs-cards {
+  color: var(--white);
+}
+.subs-cards .common-heading {
+  text-align: center;
+  font-size: 10rem;
+  margin-top: 8rem;
+}
+.subs-card1 .common-heading i {
+  font-size: 10rem;
+  color: var(--gray);
+}
+.subs-card2 .common-heading i {
+  font-size: 10rem;
+}
+.subs-cards span {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subs-cards p {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 5rem;
+  margin-top: 2.5rem;
+}
+.subs-card1 {
+  background-color: var(--dark-gray);
+}
+.subs-card2 {
+  background-color: var(--dark-blue);
+}
+.subs-cards button {
+  margin: 4rem auto;
+}
+.subs-btn1 {
+  padding: 0.7rem 5.7rem;
+  margin-top: 4rem;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subs-btn1:hover {
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+.subs-btn2 {
+  padding: 0.7rem 5.7rem;
+  margin-top: 4rem;
+  color: var(--dark-blue);
+  background-color: var(--white);
+  border-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subs-btn2:hover {
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+/* call to action  */
+.call {
+  height: 8rem;
+  background-color: rgb(226, 45, 45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call p {
+  font-size: 2.4rem;
+}
+.call button {
+  padding: 0.7rem 5.7rem;
+  color: #b05253;
+  background-color: var(--white);
+  margin-left: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call button:hover {
+  background-color: #b05253;
+  color: var(--white);
+  border-color: var(--white);
+}
+/* ===================================
+          Our Footer Section Start
+   ===================================  */
+.footer {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+.foot-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.circle-foot {
+  width: 7rem;
+  height: 7rem;
+  margin-top: 7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-blue);
+}
+.circle-foot i {
+  font-size: 4rem;
+}
+.foot-text h2 {
+  margin-top: 4rem;
+}
+.foot-text p {
+  font-size: 2rem;
+  text-align: center;
+}
+.foot-text input {
+  width: 50rem;
+  height: 5rem;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.foot-text button {
+  padding: 0.7rem 1.7rem;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin-left: -1rem;
+}
+.foot-text button:hover {
+  color: var(--dark-blue);
+  background-color: var(--white);
+  border-color: var(--white);
+}
+.foot-text span {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.foot-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+  padding-bottom: 3rem;
+}
+.foot-nav nav a {
+  color: var(--dark-blue);
+}
+.foot-nav nav a::after {
+  border-bottom: 0.3rem solid var(--white);
+}
+.foot-nav span {
+  font-size: 2rem;
+  margin-left: 40rem;
+}
+/* ===================================
+     Media Queries
+    ===================================  */
+/* for 1200px */
+@media (max-width: 1200px) {
+  .project .container {
+    padding: 0 3rem;
+  }
+  .team .container {
+    padding: 0 3rem;
+  }
+  html {
+    font-size: 55%;
+  }
+  main {
+    height: 70vh;
+  }
+  .service {
+    height: 40vh;
+  }
+  .service p {
+    padding: 1rem 1.9rem;
+  }
+}
+/* for 1040ox */
+@media (max-width: 1040px) {
+  .header {
+    position: relative;
+  }
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 9999;
+    border: 0.3rem solid var(--black);
+    color: var(--black);
+  }
+  .mobile-nav-icon {
+    width: 5rem;
+    height: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+  .nav {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    /* display: none; (coz animation will not show) */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .nav a:link,
+  .nav a:visited {
+    color: var(--black);
+    font-size: 3.2rem;
+  }
+  .active .nav {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .active .mobile-navbar-btn .mobile-nav-icon[name="o"] {
+    display: none;
+  }
+  .active .mobile-navbar-btn .mobile-nav-icon[name="c"] {
+    display: block;
+  }
+}
+/* for 992px */
+@media (max-width: 992px) {
+  html {
+    font-size: 52%;
+  }
+  .ser-section .grid-two-column {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .boots-logo i {
+    width: 45rem;
+    height: 45rem;
+    font-size: 30rem;
+  }
+  .bootstrap-sec h2 {
+    font-size: 2.9rem;
+  }
+  .bootstrap-sec .bold-para {
+    font-size: 1.3rem;
+  }
+  .bootstrap-sec p {
+    font-size: 1.2rem;
+  }
+  .blueprint1-div {
+    width: 50rem;
+    height: 40rem;
+  }
+  .blueprint1-text h2 {
+    font-size: 4rem;
+  }
+  .blueprint1-text p {
+    font-size: 1.7rem;
+  }
+  .blueprint2-div {
+    width: 50rem;
+    height: 40rem;
+    font-size: 22rem;
+  }
+  .blueprint2-text h2 {
+    font-size: 4rem;
+  }
+  .blueprint2-text p {
+    font-size: 1.7rem;
+  }
+  .project .grid-three-column {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .team .grid-four-column {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9rem;
+  }
+  .call p {
+    font-size: 2rem;
+  }
+}
+/* for 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 47%;
+  }
+  .service p {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .sec-sub .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+  .section1 .grid-two-column,
+  .section2 .grid-two-column,
+  .section3 .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+  .boots-logo i {
+    width: 100%;
+    height: 35rem;
+    font-size: 25rem;
+  }
+  .bootstrap-sec h2 {
+    font-size: 2rem;
+  }
+  .bootstrap-sec .bold-para {
+    font-size: 1rem;
+  }
+  .bootstrap-sec p {
+    font-size: 1rem;
+  }
+  .blueprint1-div {
+    width: 100%;
+    height: 30rem;
+    font-size: 25rem;
+    grid-row: 2;
+  }
+}
+.blueprint2-div {
+  width: 100%;
+  height: 30rem;
+  font-size: 25rem;
+}
+.blueprint2-text h2 {
+  font-size: 3.5rem;
+}
+.blueprint2-text p {
+  font-size: 1.5rem;
+}
+.blueprint2-div i {
+  font-size: 24rem;
+}
+/* for 576px */
+@media (max-width: 576px) {
+  html {
+    font-size: 42%;
+  }
+  main {
+    height: 50vh;
+  }
+  .content {
+    padding-left: 0rem;
+    text-align: center;
+  }
+  .text h1 {
+    font-size: 3rem;
+  }
+  .text p {
+    font-size: 1.2rem;
+  }
+  #btns {
+    margin-right: 0rem;
+  }
+  .btn2 .fa-solid {
+    font-size: 3rem;
+  }
+  .down-arrow i {
+    font-size: 0.1rem;
+  }
+  .sec-sub .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+  .ser-section h2 {
+    font-size: 3rem;
+  }
+  .sub-service h2 {
+    font-size: 2rem;
+  }
+  .sub-service p {
+    font-size: 1rem;
+  }
+  .sub-service i {
+    font-size: 2.5rem;
+  }
+  .boots-text,
+  .blueprint1-text,
+  .blueprint2-text {
+    text-align: center;
+  }
+  .bootstrap-sec {
+    gap: 5rem;
+  }
+  .bootstrap-sec2 {
+    gap: 5rem;
+  }
+  .bootstrap-sec .bold-para {
+    font-size: 1.3rem;
+    word-spacing: 0.3rem;
+  }
+  .bootstrap-sec p {
+    font-size: 1.1rem;
+  }
+  .blueprint1-text h2 {
+    font-size: 3rem;
+  }
+  .blueprint1-text p {
+    font-size: 1.2rem;
+  }
+  .blueprint-btn {
+    padding: 0.4rem 1.2rem;
+  }
+  .blueprint2-div i {
+    font-size: 13rem;
+  }
+  .blueprint2-text h2 {
+    font-size: 3rem;
+  }
+  .blueprint2-text h3 {
+    padding-top: 2rem;
+  }
+  .blueprint2-text p {
+    font-size: 1.2rem;
+  }
+  .brows {
+    justify-content: center;
+  }
+  .browser {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.3rem;
+  }
+  .project .grid-three-column {
+    grid-template-columns: 1fr;
+  }
+  .img-overlay .common-heading {
+    font-size: 3.4rem;
+  }
+  .team .grid-four-column {
+    grid-template-columns: 1fr;
+  }
+  .subs h2 {
+    font-size: 3rem;
+  }
+  .subs p {
+    font-size: 1.2rem;
+  }
+  .subs .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+  .subs-cards h2,
+  i {
+    font-size: 5.5rem;
+    font-weight: 100;
+  }
+  .call p {
+    font-size: 1rem;
+  }
+  .call button {
+    padding: 0.7rem 2.7rem;
+  }
+  .foot-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .foot-text h2 {
+    font-size: 3rem;
+  }
+  .foot-text p {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+  .foot-nav span {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .foot-text input {
+    width: 30rem;
+    height: 4rem;
+  }
+}
+/* below 490px */
+@media (max-width: 500px) {
+  html {
+    font-size: 30%;
+  }
+  .icon {
+    display: none;
+  }
+  .content {
+    padding: 0 1rem;
+  }
+  .foot-text {
+    text-align: center;
+  }
+}
+/* below 420px */
+@media (max-width: 420px) {
+  html {
+    font-size: 30%;
+  }
+  .container {
+    max-width: 27rem;
+  }
+}
+/* below 360px */
+@media (max-width: 360px) {
+  html {
+    font-size: 20%;
+  }
+}
+@media (max-width: 1800px) {
+  html {
+    font-size: 55%;
+  }
+}
