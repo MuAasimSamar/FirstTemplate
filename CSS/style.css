@@ -199,8 +199,7 @@ main {
      Service Section Start
     ===================================  */
 .service {
-  margin-top: 1.4rem;
-  height: 55vh;
+  padding: 1.4rem 0;
   color: var(--white);
 }
 .service h2 {
@@ -218,6 +217,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2rem 1rem;
 }
 .service-2 {
   background-color: var(--dark-blue);
@@ -225,6 +225,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2rem 1rem;
 }
 .download-btn1 {
   margin-top: 4rem;
@@ -689,6 +690,9 @@ main {
     ===================================  */
 /* for 1200px */
 @media (max-width: 1200px) {
+  .container {
+    max-width: 120rem;
+  }
   .project .container {
     padding: 0 3rem;
   }
@@ -696,16 +700,10 @@ main {
     padding: 0 3rem;
   }
   html {
-    font-size: 55%;
+    font-size: 52%;
   }
   main {
     height: 70vh;
-  }
-  .service {
-    height: 40vh;
-  }
-  .service p {
-    padding: 1rem 1.9rem;
   }
 }
 /* for 1040ox */
@@ -768,9 +766,15 @@ main {
   html {
     font-size: 52%;
   }
+  .container {
+    max-width: 90rem;
+  }
   .ser-section .grid-two-column {
     grid-template-columns: 1fr;
     gap: 0.3rem;
+  }
+  .sec-sub .grid-two-column {
+    grid-template-columns: 1fr;
   }
   .boots-logo i {
     width: 45rem;
@@ -824,12 +828,12 @@ main {
   html {
     font-size: 47%;
   }
+  .container {
+    max-width: 70rem;
+  }
   .service p {
     font-size: 1rem;
     padding: 0.5rem 1.5rem;
-  }
-  .sec-sub .grid-two-column {
-    grid-template-columns: 1fr;
   }
   .section1 .grid-two-column,
   .section2 .grid-two-column,
@@ -878,6 +882,8 @@ main {
   }
   main {
     height: 50vh;
+    display: grid;
+    place-items: center;
   }
   .content {
     padding-left: 0rem;
@@ -1037,10 +1043,5 @@ main {
 @media (max-width: 360px) {
   html {
     font-size: 20%;
-  }
-}
-@media (max-width: 1800px) {
-  html {
-    font-size: 55%;
   }
 }
